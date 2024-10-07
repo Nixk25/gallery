@@ -3,7 +3,7 @@
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-export function Marquee() {
+const Marquee = () => {
   return (
     <div className="h-max border-b-2 border-black flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-x-hidden">
       <InfiniteMovingCards
@@ -13,7 +13,7 @@ export function Marquee() {
       />
     </div>
   );
-}
+};
 
 const testimonials = [
   { name: "Picasso" },
@@ -24,3 +24,5 @@ const testimonials = [
   { name: "Pollock" },
   { name: "Rothko" },
 ];
+
+export default Marquee;

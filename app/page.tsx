@@ -1,7 +1,8 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
+import Marquee from "@/components/Marquee";
 import SneakPeak from "@/components/SneakPeak";
+import UpcomingEvents from "@/components/UpcomingEvents";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <SneakPeak />
+      <UpcomingEvents />
     </div>
   );
 }

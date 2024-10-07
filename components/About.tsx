@@ -13,8 +13,8 @@ const Feature = ({ name, number }: { name: string; number: string }) => {
 const About = () => {
   return (
     <section className="border-b border-black">
-      <div className=" flex w-full  ">
-        <div className="flex-1 p-5 px-10 space-y-5 border-r border-black">
+      <div className=" flex w-full md:flex-row flex-col  ">
+        <div className="flex-1 flex flex-col p-5 px-10 md:justify-start justify-center items-center md:items-start space-y-5 border-r border-black">
           <Feature name="Artworks" number="20+" />
           <Feature name="Artists" number="15+" />
           <Feature name="Visitors" number="10k+" />
