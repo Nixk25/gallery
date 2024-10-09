@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import SneakPeak from "@/components/SneakPeak";
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <SneakPeak />
       <UpcomingEvents />
+      <Testimonials />
     </div>
   );
 }
