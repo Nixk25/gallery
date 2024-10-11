@@ -1,3 +1,9 @@
+import image1 from "./assets/avatars/image1.webp";
+import image2 from "./assets/avatars/image2.webp";
+import image3 from "./assets/avatars/image3.webp";
+import image4 from "./assets/avatars/image4.webp";
+import image5 from "./assets/avatars/image5.webp";
+
 export const ARTWORKS = [
   {
     artist: "Sophia Michaels",
@@ -60,5 +66,58 @@ export const EVENTS = [
     date: "2025-08-19",
     description:
       "Celebrate the new year with a showcase of emerging artists and their works. Enjoy live performances, food trucks, and family-friendly activities.",
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    name: "Sophia Arlington",
+    avatar:
+      "https://images.pexels.com/photos/2092474/pexels-photo-2092474.jpeg?auto=compress&cs=tinysrgb&w=800",
+    testimonial:
+      "The Echoes of Creation gallery is a truly transformative experience. The art here speaks to the soul and challenges the mind in ways I've never encountered before.",
+    position: "Chief Creative Officer",
+    company: "Artemis Visuals",
+    location: "New York, USA",
+  },
+  {
+    name: "Liam Navarro",
+    avatar:
+      "https://images.pexels.com/photos/2287252/pexels-photo-2287252.jpeg?auto=compress&cs=tinysrgb&w=800",
+    testimonial:
+      "This gallery has redefined what art means in the digital age. It's a hub for both emerging and established talent, and the exhibits are always on the cutting edge.",
+    position: "Founder & CEO",
+    company: "Navarro Arts Collective",
+    location: "Barcelona, Spain",
+  },
+  {
+    name: "Isabella Chen",
+    avatar:
+      "https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=800",
+    testimonial:
+      "I’ve never seen a gallery capture the essence of creativity like this one. Every visit leaves me feeling inspired and energized to push boundaries in my own work.",
+    position: "Lead Art Curator",
+    company: "Chen Curations",
+    location: "Shanghai, China",
+  },
+  {
+    name: "Alexander Patel",
+    avatar:
+      "https://images.pexels.com/photos/22890534/pexels-photo-22890534/free-photo-of-drevo-muz-slunecni-bryle-listy.jpeg?auto=compress&cs=tinysrgb&w=800",
+    testimonial:
+      "The blend of innovation and tradition at this gallery is remarkable. It has become a must-visit for anyone who appreciates art in its most dynamic forms.",
+    position: "Global Head of Design",
+    company: "Patel Global Design Studio",
+    location: "London, UK",
+  },
+  {
+    name: "Emma Johansson",
+    avatar:
+      "https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=800",
+    testimonial:
+      "From the moment I stepped into this gallery, I felt transported into a world of imagination and possibility. It’s a cultural cornerstone for anyone passionate about art.",
+    position: "Creative Director",
+    company: "Nordic Visions",
+    location: "Stockholm, Sweden",
   },
 ];

@@ -35,11 +35,11 @@ const EventsClientSide = () => {
     <>
       <ScrollEvents onEventClick={handleEventClick} />
 
-      <div className="text-start md:p-20 p-5">
+      <div className="text-start md:p-20 p-5 ">
         <AnimatePresence mode="wait">
           {EVENTS[currentEventIndex] && (
             <div key={currentEventIndex}>
-              <h3 className="text-6xl overflow-hidden ">
+              <h3 className="text-5xl md:text-6xl overflow-hidden ">
                 {EVENTS[currentEventIndex].title.split(" ").map((word, i) => (
                   <span key={i} className="inline-block">
                     {word.split("").map((char, j) => (

@@ -2,42 +2,31 @@ import React from "react";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "./ui/card";
+
+import { TESTIMONIALS } from "@/app/constants";
+import Testimonial from "./Testimonial";
 
 const Testimonials = () => {
   return (
-    <section className=" flex justify-center items-center p-5 mb-20">
-      <div className="container relative">
-        <h2 className="subheading  ">
-          What Our <br /> <span className="text-primary">Clients</span> Say
-        </h2>
+    <section className=" flex justify-center items-center  mb-20">
+      <div className="w-full relative border  md:pb-10 pb-20 border-black ">
+        <div className="w-full border-b border-black">
+          <h2 className="subheading  border-black border-r w-max p-5 ">
+            What Our <br /> <span className="text-primary">Clients</span> Say
+          </h2>
+        </div>
 
-        <Carousel className="w-full ">
+        <Carousel opts={{ align: "start" }} className="w-full p-5 ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem
-                key={index}
-                className="md:basis-1/2 lg:basis-1/3 hover:cursor-grab active:cursor-grabbing"
-              >
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <span className="text-4xl font-semibold">
-                        {index + 1}
-                      </span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
+            {TESTIMONIALS.map((testimonial, idx) => (
+              <Testimonial key={idx} testimonial={testimonial} idx={idx} />
             ))}
           </CarouselContent>
-          <div className="absolute flex gap-5 md:right-14 md:-top-10 -bottom-10 left-1/2 -translate-x-1/2">
+          <div className="absolute md:right-5 md:-top-14 flex gap-5 justify-end  md:-translate-x-0 -bottom-14 left-1/2 -translate-x-1/2">
             <CarouselPrevious variant="default" />
-
             <CarouselNext variant="default" />
           </div>
         </Carousel>

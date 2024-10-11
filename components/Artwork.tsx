@@ -29,7 +29,7 @@ const Artwork = ({ idx, artwork }: { idx: number; artwork: any }) => {
       key={idx}
       //@ts-ignore
       ref={(el) => (cardRefs.current[idx] = el)}
-      className="relative  flex flex-col border-b w-full p-4 border-black "
+      className="relative  flex flex-col border-b last:border-b-0 w-full p-4 border-black "
       onMouseMove={(e) => updateMousePosition(e, idx)}
       onMouseLeave={handleMouseLeave}
     >
