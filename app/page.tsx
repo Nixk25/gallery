@@ -1,9 +1,10 @@
-import About from "@/components/About";
-import Testimonials from "@/components/Testimonials";
+import About from "@/components/About/About";
+import Testimonials from "@/components/Testimonials/Testimonials";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
-import SneakPeak from "@/components/SneakPeak";
-import UpcomingEvents from "@/components/UpcomingEvents";
+import SneakPeak from "@/components/SneakPeak/SneakPeak";
+import UpcomingEvents from "@/components/Events/UpcomingEvents";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SneakPeak />
       <UpcomingEvents />
       <Testimonials />
+      <Faq />
     </div>
   );
 }
