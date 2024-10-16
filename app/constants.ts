@@ -121,3 +121,31 @@ export const TESTIMONIALS = [
     location: "Stockholm, Sweden",
   },
 ];
+
+export const faq = [
+  {
+    question: "What are the gallery's opening hours?",
+    answer:
+      "Our gallery is open from 10 AM to 6 PM, Monday to Saturday. We are closed on Sundays and public holidays.",
+  },
+  {
+    question: "Is there an entry fee to visit the gallery?",
+    answer:
+      "Yes, the entry fee is $10 for adults, $5 for students and seniors, and free for children under 12.",
+  },
+  {
+    question: "Can I buy artwork directly from the gallery?",
+    answer:
+      "Yes, many of the artworks on display are available for purchase. You can inquire with our staff during your visit or browse the 'Exhibitions' section on our website for more details.",
+  },
+  {
+    question: "Do you offer guided tours?",
+    answer:
+      "We offer guided tours for groups of 5 or more people. Please contact us in advance to schedule your tour.",
+  },
+  {
+    question: "Are photography and videos allowed in the gallery?",
+    answer:
+      "Photography is allowed, but please refrain from using flash. Videography is prohibited unless you have prior permission from the gallery.",
+  },
+];

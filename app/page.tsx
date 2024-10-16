@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import SneakPeak from "@/components/SneakPeak/SneakPeak";
 import UpcomingEvents from "@/components/Events/UpcomingEvents";
-import Faq from "@/components/Faq";
+import Faq from "@/components/Faq/Faq";
 
 export default function Home() {
   return (
