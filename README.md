@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>Éclat Gallery 🎨</h1>
 
-## Getting Started
+<h2>Intro</h2>
+Éclat Gallery is a web application designed to showcase artwork from global artists. This project emphasizes interactive design and performance, allowing users to explore various art pieces in a visually appealing manner. The application provides a modern interface that enhances user experience and engagement.
 
-First, run the development server:
+<h2>Tech Stack 🛠️</h2>
+<ul>
+<li>Frontend: Next.js, Tailwind CSS, Framer Motion, and shadcn/ui.</li>
+<li>Backend: Node.js (for server-side logic).</li>
+<li>Database: MongoDB (for storing artwork data).</li>
+</ul>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2>Features 🌟</h2>
+<ul>
+<li>Artwork Showcase: Users can view a variety of artworks with detailed information.</li>
+<li>Interactive Design: Smooth animations and transitions enhance the browsing experience.</li>
+<li>User Authentication: Secure login functionality for personalized experiences.</li>
+<li>Responsive Design: The application is optimized for various devices.</li>
+</ul>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>Process 🚀</h2>
+The project began with the idea of creating a digital gallery that highlights artwork from diverse artists. I designed the user interface using Figma, ensuring a visually captivating layout. Frontend development utilized Next.js for its flexibility, while Framer Motion added interactive animations. Integrating the backend required learning about server-side logic and database interactions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2>Learnings 🧠</h2>
+<ul>
+<li>Interactive UI Development: Creating engaging user interfaces with animations.</li>
+<li>Full-Stack Integration: Connecting frontend components with backend logic.</li>
+<li>Database Management: Utilizing MongoDB for effective data storage.</li>
+<li>Problem-Solving: Navigating challenges during development and deployment.</li>
+</ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h2>Project Visuals 📸</h2>
+<img width="1439" alt="Snímek obrazovky elcat gallery" src="https://github.com/Nixk25/gallery/assets/116200689/0478b51a-907e-4903-906f-f83d72847037">
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
