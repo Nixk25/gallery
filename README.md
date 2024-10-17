@@ -30,5 +30,5 @@ The project began with the idea of creating a digital gallery that highlights ar
 </ul>
 
 <h2>Project Visuals 📸</h2>
-<img width="1439" alt="Snímek obrazovky elcat gallery" src="https://github.com/Nixk25/gallery/assets/116200689/0478b51a-907e-4903-906f-f83d72847037">
+<img width="1439" alt="Snímek obrazovky elcat gallery" src="https://github.com/user-attachments/assets/527d1a77-0c41-4f56-bf01-af4bbf0709d0">
 
