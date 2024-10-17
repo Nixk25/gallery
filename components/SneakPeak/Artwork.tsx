@@ -15,8 +15,11 @@ type ArtworkProps = {
 };
 const Artwork = ({ idx, artwork }: ArtworkProps) => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-  //@ts-ignore
-  const [mousePosition, setMousePosition] = useState<any>({ x: null, y: null });
+
+  const [mousePosition, setMousePosition] = useState<{
+    x: number | null;
+    y: number | null;
+  }>({ x: null, y: null });
 
   const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
 
@@ -58,7 +61,9 @@ const Artwork = ({ idx, artwork }: ArtworkProps) => {
               className="absolute size-20 flex items-center justify-center rounded-full bg-primary text-white"
               initial={{ opacity: 0 }}
               animate={{
+                //@ts-ignore
                 x: mousePosition.x - 80,
+                //@ts-ignore
                 y: mousePosition.y - 80,
                 opacity: 1,
               }}
