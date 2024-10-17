@@ -15,6 +15,7 @@ type ArtworkProps = {
 };
 const Artwork = ({ idx, artwork }: ArtworkProps) => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  //@ts-ignore
   const [mousePosition, setMousePosition] = useState<any>({ x: null, y: null });
 
   const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
