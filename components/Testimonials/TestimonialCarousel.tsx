@@ -17,8 +17,8 @@ const TestimonialCarousel = () => {
         ))}
       </CarouselContent>
       <div className="absolute md:right-5 md:-top-14 flex gap-5 justify-end  md:-translate-x-0 -bottom-14 left-1/2 -translate-x-1/2">
-        <CarouselPrevious variant="default" />
-        <CarouselNext variant="default" />
+        <CarouselPrevious className="rounded-full w-14" variant="default" />
+        <CarouselNext variant="default" className="rounded-full w-14" />
       </div>
     </Carousel>
   );

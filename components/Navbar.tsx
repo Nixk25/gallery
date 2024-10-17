@@ -8,7 +8,6 @@ const Navbar = () => {
         <div className="border-r h-full flex justify-center items-center px-4  border-black ">
           <IoMenu />
         </div>
-        <div>LOGO</div>
 
         <Button className="border-l h-full border-black">Visit us</Button>
       </div>

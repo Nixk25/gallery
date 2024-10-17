@@ -5,6 +5,7 @@ import Marquee from "@/components/Marquee";
 import SneakPeak from "@/components/SneakPeak/SneakPeak";
 import UpcomingEvents from "@/components/Events/UpcomingEvents";
 import Faq from "@/components/Faq/Faq";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <UpcomingEvents />
       <Testimonials />
       <Faq />
+      <Contact />
     </div>
   );
 }
