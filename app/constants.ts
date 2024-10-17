@@ -1,9 +1,3 @@
-import image1 from "./assets/avatars/image1.webp";
-import image2 from "./assets/avatars/image2.webp";
-import image3 from "./assets/avatars/image3.webp";
-import image4 from "./assets/avatars/image4.webp";
-import image5 from "./assets/avatars/image5.webp";
-
 export const ARTWORKS = [
   {
     artist: "Sophia Michaels",

@@ -5,7 +5,15 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
-const Artwork = ({ idx, artwork }: { idx: number; artwork: any }) => {
+type ArtworkProps = {
+  artwork: {
+    artist: string;
+    title: string;
+    description: string;
+  };
+  idx: number;
+};
+const Artwork = ({ idx, artwork }: ArtworkProps) => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [mousePosition, setMousePosition] = useState<any>({ x: null, y: null });
 
