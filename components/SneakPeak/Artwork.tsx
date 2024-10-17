@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { useState, useRef } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -13,6 +12,7 @@ type ArtworkProps = {
   };
   idx: number;
 };
+
 const Artwork = ({ idx, artwork }: ArtworkProps) => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
@@ -22,6 +22,13 @@ const Artwork = ({ idx, artwork }: ArtworkProps) => {
   }>({ x: null, y: null });
 
   const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  const setCardRef = useCallback(
+    (el: HTMLDivElement | null) => {
+      cardRefs.current[idx] = el;
+    },
+    [idx]
+  );
 
   const updateMousePosition = (e: React.MouseEvent, index: number) => {
     const rect = cardRefs.current[index]?.getBoundingClientRect();
@@ -36,12 +43,12 @@ const Artwork = ({ idx, artwork }: ArtworkProps) => {
   const handleMouseLeave = () => {
     setHoveredCard(null);
   };
+
   return (
     <div
       key={idx}
-      //@ts-ignore
-      ref={(el) => (cardRefs.current[idx] = el)}
-      className="relative  flex flex-col border-b last:border-b-0 w-full p-4 border-black "
+      ref={setCardRef}
+      className="relative flex flex-col border-b last:border-b-0 w-full p-4 border-black"
       onMouseMove={(e) => updateMousePosition(e, idx)}
       onMouseLeave={handleMouseLeave}
     >
@@ -56,38 +63,38 @@ const Artwork = ({ idx, artwork }: ArtworkProps) => {
         </div>
 
         <AnimatePresence>
-          {hoveredCard === idx && (
-            <motion.div
-              className="absolute size-20 flex items-center justify-center rounded-full bg-primary text-white"
-              initial={{ opacity: 0 }}
-              animate={{
-                //@ts-ignore
-                x: mousePosition.x - 80,
-                //@ts-ignore
-                y: mousePosition.y - 80,
-                opacity: 1,
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.3 } }}
-              transition={{
-                type: "spring",
-                bounce: 0.2,
-                duration: 1,
-              }}
-            >
+          {hoveredCard === idx &&
+            mousePosition.x !== null &&
+            mousePosition.y !== null && (
               <motion.div
-                initial={{ rotate: "20deg" }}
-                animate={{ rotate: "-20deg" }}
+                className="absolute size-20 flex items-center justify-center rounded-full bg-primary text-white"
+                initial={{ opacity: 0 }}
+                animate={{
+                  x: mousePosition.x - 80,
+                  y: mousePosition.y - 80,
+                  opacity: 1,
+                }}
+                exit={{ opacity: 0, transition: { duration: 0.3 } }}
                 transition={{
+                  type: "spring",
+                  bounce: 0.2,
                   duration: 1,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  ease: "easeInOut",
                 }}
               >
-                <FaArrowRight className="text-xl" />
+                <motion.div
+                  initial={{ rotate: "20deg" }}
+                  animate={{ rotate: "-20deg" }}
+                  transition={{
+                    duration: 1,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                    ease: "easeInOut",
+                  }}
+                >
+                  <FaArrowRight className="text-xl" />
+                </motion.div>
               </motion.div>
-            </motion.div>
-          )}
+            )}
         </AnimatePresence>
       </div>
     </div>
