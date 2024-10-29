@@ -8,7 +8,9 @@ const Contact = () => {
         <h2 className="text-center subheading tracking-tighter">
           Keep in <span className="text-primary ">Touch</span>
         </h2>
-        <p className="text-gray-500">Subscribe for updates about our gallery</p>
+        <p className="text-gray-500 text-center">
+          Subscribe for updates about our gallery
+        </p>
         <NewsletterInput />
       </div>
     </section>
